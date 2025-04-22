@@ -1,0 +1,472 @@
+.contentv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Aligner les éléments à gauche */
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 65%; /* Ajustez pour l’espace des éléments de gauche */
+  
+}
+
+.Btnchoixv {
+  display: flex;
+  flex-direction: row; /* Aligner les boutons verticalement */
+  justify-content: flex-start;
+  align-items: flex-start; /* Aligner les boutons à gauche */
+  gap: 30px;
+  margin-left: 50px; /* Marge à gauche */
+  margin-top: 20px; /* Marge en haut */
+}
+
+.info-patient, .med-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 90%; /* Ajustez selon vos préférences */
+}
+
+.Btnchoix {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px; 
+
+}
+
+
+
+.video-call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligner les éléments à droite */
+  justify-content: flex-start;
+  width: 30%;
+  position: fixed;
+  right: 20px; /* Distance du bord droit */
+  top: 200px; /* Distance du haut de la page */
+  z-index: 1000; /* S'assurer que c'est au-dessus des autres éléments */
+}
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 444px;
+
+}
+
+
+
+.video-feed.large {
+   
+    max-height: 300px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    
+   
+}
+
+.video-feed.small {
+    width: 20%; /* Taille de la vidéo locale (petite) */
+    position: relative;
+    bottom: 10px;
+    right: 100px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: -100px;
+}
+
+.call-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centrer les boutons horizontalement */
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+}
+
+.call-controls button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.call-controls button:hover {
+  background-color: #e0e0e0;
+}
+
+.call-controls .end-call {
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-controls .end-call img {
+  width: 24px;
+  height: 24px;
+  margin-right: 60px;
+}
+
+
+.video-feed, .recorded-video {
+  
+  max-width: 100%;
+  padding-bottom:100px ;
+  border: 2px solid #000;
+  border-radius: 8px;
+  
+}
+
+.Ordonance {
+  width: 18%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Constante {
+  width: 16%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Rapport {
+  width: 15%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Historique {
+  width: 14%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Historique:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+.Rapport:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+.Ordonance:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+.Constante:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+
+.Btnchoixp {
+  display: flex;
+  flex-direction: row; /* Aligner les boutons verticalement */
+  justify-content: center;
+  align-items: center; /* Aligner les boutons à gauche */
+  gap: 10px;
+  margin-top: 20px; /* Marge en haut */
+}
+
+.Ordonancep {
+  width: 10%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Constantep {
+  width: 9%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Rapportp {
+  width: 8%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Historiquep {
+  width: 7%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: wrap; 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Historiquep:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+.Rapportp:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+.Ordonancep:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+.Constantep:hover {
+  background-color: #0099B2;
+  color: white;
+
+}
+
+
+.Contentp {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  height: 100vh; 
+}
+
+.Btnchoixp {
+  display: flex;
+  flex-direction: row; /* Aligner les boutons verticalement */
+  justify-content: center;
+  align-items: center; /* Aligner les boutons à gauche */
+  gap: 20px;
+  margin-left: 20px; /* Marge à gauche */
+  margin-top: 20px; /* Marge en haut */
+}
+
+
+.contentv {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; /* Centrer verticalement */
+  align-items: center; /* Centrer horizontalement */
+  width: 100%;
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+}
+
+.video-call-containerP {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: relative; /* Assure que tout reste bien centré */
+}
+
+.video-wrapperP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrer la vidéo principale */
+  width: 100%;
+}
+
+.video-feed.largeP {
+  width: 100%; /* Taille principale de la vidéo */
+  height: 260px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.video-feed.smallP {
+  width: 10%; /* Taille de la vidéo locale (petite) */
+  position: absolute;
+  bottom: 90px;
+  right: 355px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.call-controlsP {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centrer horizontalement */
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.call-controlsP button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.call-controlsP button:hover {
+  background-color: #e0e0e0;
+}
+
+.call-controlsP .end-call {
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-controlsP .end-call img {
+  width: 24px;
+  height: 24px;
+  margin-right: 60px;
+}
+
+
+
+
+
+/*
+
+.video-feed.large {
+  width: 70%; /* Taille principale de la vidéo 
+  max-height: 300px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.video-feed.small {
+  width: 7%; /* Taille de la vidéo locale (petite) 
+  position: relative;
+  bottom: 10px;
+  right: 110px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.call-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centrer les boutons horizontalement 
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.call-controls button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.call-controls button:hover {
+  background-color: #e0e0e0;
+}
+
+.call-controls .end-call {
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-controls .end-call img {
+  width: 24px;
+  height: 24px;
+}
+
+.Ordonance, .Constante {
+  width: 150px; /* Largeur fixe pour les boutons 
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  white-space: nowrap; /* Empêcher le texte de se diviser 
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center; /* Centrer le texte 
+}
+
+.Ordonance:hover, .Constante:hover {
+  background-color: #0099B2;
+  color: white;
+}
+*/

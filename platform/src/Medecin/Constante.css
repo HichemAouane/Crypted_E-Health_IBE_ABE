@@ -1,0 +1,80 @@
+.content-b {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(118, 245, 245);
+  border-radius: 50px;
+  margin-left: -20px;
+
+}
+
+.content-o h2 {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.content-b h2 {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.tab-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-bottom: 2px solid #eee;
+}
+
+.tab-menu li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-menu li.selected {
+  border-bottom: 2px solid #74beff;
+  color: #444;
+}
+
+.tab-content {
+  padding: 20px;
+  color: #444;
+}
+
+.tab-menup {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-bottom: 2px solid #eee;
+}
+
+.tab-menup li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-menup li.selected {
+  border-bottom: 2px solid #74ffae;
+  color: #444;
+}
+
