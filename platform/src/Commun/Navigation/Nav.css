@@ -1,0 +1,234 @@
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spreads elements evenly */
+    padding: 10px 20px;
+    background-color: rgb(233, 231, 231);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1fr;
+    height: 86px;
+
+    
+}
+
+
+/* Styles pour la liste principale */
+.liste-items {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+}
+/* Styles pour les éléments de la liste */
+.items {
+    margin-left: 0px;
+    position: relative;
+    
+}
+
+.items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+}
+
+.items a:hover {
+    color: #007bff;
+}
+
+/* Styles pour le sous-menu */
+.sous-liste {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.items:hover .sous-liste {
+    display: block;
+}
+
+/* Styles pour les éléments du sous-menu */
+.items-sous-liste {
+    margin: 5px 0;
+}
+
+.items-sous-liste a {
+    color: #555;
+    font-weight: normal;
+}
+
+.items-sous-liste a:hover {
+    color: #007bff;
+}
+
+/* Style pour l'image */
+.person-icon {
+    width: 100px; /* Taille de l'image */
+    height: 50px;
+
+    object-fit: cover; /* Pour éviter la distorsion de l'image */
+    transition: transform 0.3s ease; /* Animation au survol */
+    background-color: transparent; /* Fond transparent */
+    mix-blend-mode: multiply; /* Supprime le fond blanc */
+    position: static;
+    margin-top: -50px;
+}
+
+.person-icon:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+@media screen and (max-width: 768px) {
+    .liste-items {
+        flex-direction: column; /* Empile les éléments en colonne */
+        align-items: center;
+        text-align: center;
+    }
+
+    .items {
+        flex: none; /* Supprime la répartition auto */
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .person-icon {
+        width: 100px; /* Taille de l'image */
+        height: 50px;
+        border-radius: 50%; /* Pour un effet arrondi */
+        object-fit: cover; /* Pour éviter la distorsion de l'image */
+        transition: transform 0.3s ease; /* Animation au survol */
+        background-color: transparent; /* Fond transparent */
+        mix-blend-mode: multiply; /* Supprime le fond blanc */
+        position: static;
+        justify-content: center; /* Centre l'icône */
+    }
+}
+.profile-container {
+    
+    width: 90px;
+    height: 90px;
+    position: static;
+    object-fit: cover;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+
+.profile-name {
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    width: 100px;
+    margin-left: 50px;
+
+}
+
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    position: static;
+    border-radius: 50%;
+    background-color: transparent; /* Fond transparent */
+    mix-blend-mode: multiply; /* Supprime le fond blanc */
+    object-fit: cover;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    margin-top: 2px;
+    background: white;
+    color: black;
+    width: 160px;
+    border-radius: 5px;
+    top: 80px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    width: 450px; 
+
+}
+.search-img{
+    width: 35px;
+    height: 32px;
+    left: auto;
+}
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00b4cc;
+    border-right: none;
+    padding: 5px;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
+    font-size: 20px;
+  }
+  
+  .searchTerm:focus {
+    color: #000000;
+    font-size: 20px;
+  }
+  
+  
+  .searchButton {
+    width: 60px;
+    height: 50px;
+    border: 1px solid #00b4cc;
+    background: #00b4cc9a;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push search to right */
+}
+.wrap {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    justify-content: center;
+}
+.dropdown-menu li {
+    padding: 12px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.dropdown-menu li:hover {
+    background: #007bff;
+    color: white;
+}
+
+a, .link-class {  
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    text-decoration: none; 
+}
+

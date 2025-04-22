@@ -1,0 +1,45 @@
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+  }
+  
+  .btn.selected {
+    background-color: rgb(47, 47, 226);
+    color: white;
+    
+  }
+  .btn:hover{
+    padding: 12px 12px;
+    position: relative;
+    top: 2px;
+    left: 0px;
+    box-shadow: none;
+  }
+  .btnfixer{
+    display: flex;
+    width:300px; 
+    background-color:gray;
+    border-radius:20px;
+    margin-left:115px;
+    margin-bottom:20px;}
+  
+  
+  @media screen and (max-width: 768px) {
+    .btnfixer{
+      display: flex;
+      width:300px; 
+      background-color:gray;
+      border-radius:20px;
+      margin-left:10px;
+      margin-bottom:20px;
+    }
+  }
+    

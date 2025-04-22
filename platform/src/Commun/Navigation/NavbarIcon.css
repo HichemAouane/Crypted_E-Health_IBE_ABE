@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(232, 233, 231);
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    height: 80px;
+    margin-right: 250px;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .menu-btn:hover {
+    transform: scale(1.1); 
+  }
+  
+  .logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-centeri {
+    display: flex;
+    align-items: center;
+    width: 594px;
+    margin-right: 200px;
+  }
+  
+  
+  .navbar-righti {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 450px;
+    
+  }
+  
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .profile-container {   
+    cursor: pointer;
+
+}
+
+.profile-container:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}

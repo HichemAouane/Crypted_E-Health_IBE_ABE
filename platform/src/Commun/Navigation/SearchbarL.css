@@ -1,0 +1,113 @@
+.searchbarl-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-right: 50px;
+    border: none;
+    
+    
+  }
+  
+  .searchl-box {
+    display: flex;
+    border: 2px solid  rgb(250, 178, 71);; /* Optionnel : pour délimiter le conteneur */
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(243, 243, 243);
+    height: 60px;
+    width: 570px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 0px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+  }
+  
+  .searchl-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgb(243, 243, 243);
+  }
+  
+  .searchl-button {
+    background: none;
+    width: 100px;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+    right: 0px;
+    top: 2px;
+    box-shadow: none;
+   
+  }
+  
+  .searchl-button:hover{
+    box-shadow: none;
+  }
+
+  .searchl-icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .searchl-icon:hover {
+    transform: scale(1.05);
+  }
+  
+  .resultsl-container {
+    position: absolute;
+    width: 89%;
+    background: rgb(201, 201, 201);
+    border: 1px solid #ccc;
+    border-top: none;
+   
+    overflow-y: auto;
+  }
+ 
+  
+  .resultl-item {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+
+  }
+  
+  .resultl-item:hover {
+    background: #d4d4d4;
+  }
+  
+  .buttonsl {
+    display: flex;
+    gap: 10px;
+    width: 150px;
+    height: 50px;
+    margin-bottom:10px;
+  }
+  
+  .view-buttonl,
+  .book-buttonl {
+    padding: 5px 10px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    
+  }
+  
+  .view-buttonl {
+    background-color: #1299d8;
+    color: white;
+
+  }
+  
+  .book-buttonl {
+    background-color: rgb(11, 194, 154);
+    color: white;
+   
+  }
+  

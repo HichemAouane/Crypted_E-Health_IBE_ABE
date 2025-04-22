@@ -1,0 +1,22 @@
+.Contact-us{
+    display: flex;
+    flex-direction: row;
+    height: 200px ;
+    background-color: rgb(94, 91, 91);
+    justify-content:space-around;
+    column-gap: 10px;
+    width: 1fr;
+}
+.Contact-element{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 20px;
+}
+.Titre-Info-Contact{
+    font-size: 20px;
+    font-weight: 800;
+    margin:10px 10px
+}
+.Normal-info-contact{
+    margin: 5px;
+}

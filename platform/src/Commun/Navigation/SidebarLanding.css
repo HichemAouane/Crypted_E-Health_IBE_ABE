@@ -1,0 +1,113 @@
+.sidebarl {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    height: 100%;
+    box-shadow: 4px 4px 6px -2px rgb(0, 0, 0);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+
+  .patient {
+    background: rgb(170, 216, 170);
+  }
+
+  .medecin {
+      background: rgb(118, 245, 245);
+  }
+
+  .default {
+      background: rgb(255, 210, 142); /* Orange clair (couleur par défaut) */
+  }
+
+  
+  .sidebarl.open {
+    width: 200px;
+  }
+  
+  .sidebarl.closed {
+    width: 90px;
+  }
+  
+  .sidebarl ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebarl-item {
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    gap: 10px;
+  
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .sidebarl-item:hover {
+    background: #f0f0f0;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  
+  .sidebarl.closed .text {
+    display: none;
+  }
+  
+  .main-content {
+    transition: margin-left 0.3s ease-in-out;
+    margin-top: 150px;
+    width: 1100px;
+    
+  }
+  
+  
+  .main-content.expanded{
+  
+    margin-left: 205px;
+    
+    
+  
+  }
+  .main-content.collapsed{
+  
+    margin-left: 100px;
+    
+  
+  }
+  
+  .sidebaricon{
+    width: 40px;
+  }
+  
+  body {
+    background-color: none;
+  }
+
+  .arrow {
+    width: 10px;
+    transition: transform 0.3s ease;
+  }
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+
+
+  .subpatient {
+    background-color: rgb(185, 255, 185);
+  }
+
+  .submedecin {
+    background-color: rgb(161, 255, 255);
+  }
+
+  .subdefault {
+    background-color:  rgb(252, 221, 175);
+  }

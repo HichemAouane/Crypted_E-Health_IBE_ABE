@@ -1,0 +1,168 @@
+  .search-container {
+    position: relative;
+    width: 50%; 
+    border: none;
+  }
+  
+  /* Sidebar des filtres */
+  .filters-container {
+    display: flex;
+    flex-direction: row;
+    width:30px;
+    background: transparent;
+  }
+  
+  .btn-icons {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .filter-button {
+    background: rgb(141, 141, 141);
+    width: 100px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 30px;
+    align-self: flex-end;
+    padding: 5px;
+  }
+
+  .dropdown-menu-filter {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    padding: 5px;
+    background: white;
+    color: black;
+    width: 700px;
+    border-radius: 5px;
+    top: 80px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+
+  /* Sélecteurs des filtres */
+  .dropdown-menu-filter select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    cursor: pointer;
+  }
+
+  
+  /* Bouton de réinitialisation */
+  .clear-filters {
+    width: 40%;  
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+  }
+
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #21ac0f;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgb(243, 243, 243);
+    height: 60px;
+    width: 570px;
+    padding-left: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 0px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgb(243, 243, 243);
+  }
+  
+  .search-button {
+    background: none;
+    width: 100px;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+    right: 0px;
+    top: 2px;
+    box-shadow: none;
+   
+  }
+  
+  .search-button:hover{
+    box-shadow: none;
+  }
+
+  .search-icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 60px;
+   
+    
+  }
+  
+  .results-container {
+    position: absolute;
+    width: 42.22%;
+    background: rgb(201, 201, 201);
+    border-top: none;
+    overflow-y: auto;
+  }
+ 
+  
+  .result-item {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+
+  }
+  
+  .result-item:hover {
+    background: #d4d4d4;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    width: 150px;
+    height: 50px;
+    margin-bottom:10px;
+  }
+  
+  .view-button,
+  .book-button {
+    padding: 5px 10px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    
+  }
+  
+  .view-button {
+    background-color: #1299d8;
+    color: white;
+
+  }
+  
+  .book-button {
+    background-color: rgb(11, 194, 154);
+    color: white;
+   
+  }
+  

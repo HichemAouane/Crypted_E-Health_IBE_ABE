@@ -1,0 +1,251 @@
+.sidebarlist {
+  width: 250px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px;
+  position: relative;
+}
+
+.sidebarlist.collapsed {
+  width: 50px; 
+  padding: 10px 5px;
+}
+
+.sidebarlist h3 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebarlist.collapsed h3,
+.sidebarlist.collapsed ul {
+  display: none;
+  }
+
+.sidebarlist.collapsed .tab-contentc {
+display: none;
+}
+
+
+.sidebarlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.toggle-btnd {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color:transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarlist.collapsed .toggle-btnd {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color:transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-bottom: 2px solid #eee;
+}
+
+.tab-menu li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-menu li.selected {
+  border-bottom: 2px solid rgb(118, 245, 245);
+  color: #444;
+}
+
+.tab-contentc {
+  padding-right: 20px;
+  margin-left: -10px;
+  color: #444;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.tab-contentc li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.tab-contentc li:hover {
+  background-color: rgb(118, 245, 245);
+}
+
+
+
+.sidebarlistP {
+  width: 50%;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: relative;
+  border-radius: 20px;
+}
+
+.sidebarlistP h3 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.sidebarlistP ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab-contentcP {
+  padding: 20px;
+  color: #444;
+  margin-top: 10px;
+  width: 93%;
+  border-radius: 10px;
+}
+
+
+.tab-contentcP li {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 96%;
+}
+
+.tab-contentcP li:hover {
+  background-color: rgb(118, 245, 245);
+}
+
+.tab li{
+  flex: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid black;
+}
+
+
+.sidebarlistM {
+  width: 50%;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.sidebarlistM h3 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.sidebarlistM ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab-contentcM {
+  padding: 20px;
+  color: #444;
+  margin-top: 10px;
+  width: 93%;
+  border-radius: 10px;
+}
+
+
+.tab-contentcM li {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 96%;
+}
+
+.tab-contentcM li:hover {
+  background-color: rgb(118, 245, 175);
+}
+
+.tab-contentcM li:active {
+  background-color: rgb(188, 255, 218);
+}
+
+.tab-contentg {
+  padding-right: 20px;
+  margin-left: -10px;
+  color: #444;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+.tab-contentg li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.tab-contentg li:hover {
+  background-color: rgb(178, 255, 213);
+}
+
+.selectedM-user {
+  background-color: rgb(118, 245, 239)!important; /* Couleur de sélection */
+  color: white; /* Changer la couleur du texte */
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.selected-user {
+  background-color: rgb(118, 245, 175)!important; /* Couleur de sélection */
+  color: white; /* Changer la couleur du texte */
+  font-weight: bold;
+  border-radius: 10px;
+}
