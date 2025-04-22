@@ -1,0 +1,68 @@
+
+* {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+  overflow-x: hidden; /* Empêche le scroll horizontal */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
+
+.p-background {
+  background-image: url(https://img.freepik.com/vecteurs-libre/vecteur-modele-cadre-courbe-verte_53876-144370.jpg?t=st=1741737689~exp=1741741289~hmac=11b7cf4e46dbc82bbf0166fb2f063f08719dc32e2f09dcd23bdf7a6a89091a59&w=1060);
+}
+
+.m-background {
+  background-image: url(https://img.freepik.com/premium-photo/watercolor-textured-blue-background_53876-143878.jpg);
+}
+
+.default-background {
+  background-image: url(https://img.freepik.com/free-vector/abstract-cover-with-smooth-lines_1182-679.jpg);
+}
+
+header {
+  text-align: center;
+  text-decoration: overline;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100px;
+  position: relative;
+  top:0%;
+  left:30px;
+ 
+}
+
+#btnScrollToTop{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  width:60px;
+  height:60px;
+  border:none;
+  border-color: white;
+  border-radius:50%;
+  background: #ffffff5b;
+  font-size: 40px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 10px #baabab rgba(0, 0, 0, 0,25);
+  outline: none;
+  cursor: pointer;
+  }
+ 
+   #btnScrollToTop:active{
+    background: #9f6060;
+   }
